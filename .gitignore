@@ -1,0 +1,21 @@
+.idea/*
+*.pyc
+twitter/*
+xu_instances/*
+*.png
+*.txt
+*.gz
+!**/requirements.txt
+*.csv
+wandb
+**/pmc
+**/pmc_driver.o
+**/libpmc.so
+# **.jsonl
+# **.pth
+*.jsonl
+data/
+**/.zip
+**/desktop.ini
+**/.DS_Store
+temp/*
