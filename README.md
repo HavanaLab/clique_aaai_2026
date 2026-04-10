@@ -2,22 +2,7 @@
 
 Code for the paper [Learning to Rank: How GNNs Solve Max-Clique and Sparse PCA](https://ojs.aaai.org/index.php/AAAI/article/view/39734)
 
-The contribution to this codebase is with equal contribution from: Omri Haber and Elad Shoham (regardless to what the commit history says)
-
-## Table of Contents
-
-- [General Description](#general-description)
-- [Train](#train)
-  - [Scattering Model](#scattering-model)
-  - [Erdos Model](#erdos-model)
-- [Evaluate](#evaluate)
-- [DevContainer/Docker](#devcontainerdocker)
-- [Data Generation](#data-generation)
-- [Datasets](#datasets)
-
-## General Description
-
-General Description
+The contribution to this codebase is with equal contribution from Omri Haber and Elad Shoham (regardless of what the commit history says)
 
 ## Train
 
@@ -96,12 +81,23 @@ After extracting its content run the following to generate the `.jsonl` dataset 
 
 # Datasets(download)
 
-todo: add appropriate links to generated datasets(wasabi)
+[N=500 Easy](https://s3.eu-central-1.wasabisys.com/clique/data/with_clique/n500_easy_instances.jsonl)
+[N=500 Medium](https://s3.eu-central-1.wasabisys.com/clique/data/with_clique/n500_medium_instances.jsonl)
+[N=500 Hard](https://s3.eu-central-1.wasabisys.com/clique/data/with_clique/n500_hard_instances.jsonl)
+
+[N=1000 Easy](https://s3.eu-central-1.wasabisys.com/clique/data/with_clique/n1000_easy_instances.jsonl)
+[N=1000 Medium](https://s3.eu-central-1.wasabisys.com/clique/data/with_clique/n1000_medium_instances.jsonl)
+[N=1000 Hard](https://s3.eu-central-1.wasabisys.com/clique/data/with_clique/n1000_hard_instances.jsonl)
+
+[Orkut](https://s3.eu-central-1.wasabisys.com/clique/data/with_clique/com-orkut.jsonl)
+[Twitter](https://s3.eu-central-1.wasabisys.com/clique/data/with_clique/twitter.jsonl)
+[Youtube](https://s3.eu-central-1.wasabisys.com/clique/data/with_clique/com-youtube.jsonl)
+[Facebook](https://s3.eu-central-1.wasabisys.com/clique/data/with_clique/facebook.jsonl)
+[IMDB](https://s3.eu-central-1.wasabisys.com/clique/data/with_clique/imdb_binary.jsonl)
+[Collab](https://s3.eu-central-1.wasabisys.com/clique/data/with_clique/collab.jsonl)
 
 # Code used/based from the following projects and papers:
 
-todo: provide links and more detail
-
-- pmc - used as solver to get max clique
-- scattering - used model's architecture and decoder and code
-- erdos goes neural - used model's architecture
+- [pmc](https://github.com/ryanrossi/pmc) - Solver used to find Max-Clique
+- [Geometric **Scattering** Maximal Clique (SNN)](https://github.com/yimengmin/GeometricScatteringMaximalClique) - One of the models used in the research 
+- [**Erdos** Goes Neural (ENN)](https://github.com/Stalence/erdos_neu) - One of the models used in the research 
